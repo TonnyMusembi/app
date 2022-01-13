@@ -4,7 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CarController;
 use App\Http\Controllers\VehicleController;
-
+use App\Http\Controllers\TownsController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -23,3 +23,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::apiResource('/cars', CarController::class );
 
 Route::apiResource('/vehicle', VehicleController::class );
+
+Route::apiResource('/towns', TownsController::class );
