@@ -7,6 +7,7 @@ use App\Http\Controllers\VehicleController;
 use App\Http\Controllers\TownsController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\VehiclesController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -31,3 +32,5 @@ Route::apiResource('/towns', TownsController::class );
 Route::apiResource('/register', RegisterController::class );
 
 Route::apiResource('/news', NewsController::class );
+
+Route::apiResource('/vehicles', VehiclesController::class );
