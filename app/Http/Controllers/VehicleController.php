@@ -1,13 +1,13 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Http\Resources\VehiclesResource;
-use App\Models\vehicles;
+use App\Http\Resources\VehicleResource;
+use App\Models\vehicle;
 use Illuminate\Http\Request;
 
 class VehicleController extends Controller
 {
     public function index(){
-        return new VehiclesResource(vehicles::all());
+        return new VehicleResource(vehicle::all());
     }
 }
