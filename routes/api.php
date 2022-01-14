@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CarController;
 use App\Http\Controllers\VehicleController;
 use App\Http\Controllers\TownsController;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\NewsController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -25,3 +27,7 @@ Route::apiResource('/cars', CarController::class );
 Route::apiResource('/vehicle', VehicleController::class );
 
 Route::apiResource('/towns', TownsController::class );
+
+Route::apiResource('/register', RegisterController::class );
+
+Route::apiResource('/news', NewsController::class );
