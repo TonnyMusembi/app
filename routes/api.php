@@ -8,6 +8,7 @@ use App\Http\Controllers\TownsController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\CountryController;
+use App\Http\Controllers\PhonesController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -35,4 +36,4 @@ Route::apiResource('/news', NewsController::class );
 
 
 Route::apiResource('/country', CountryController::class );
- 
+Route::apiResource('/phones', PhonesController::class );
