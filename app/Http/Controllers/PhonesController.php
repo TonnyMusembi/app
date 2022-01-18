@@ -10,5 +10,6 @@ class PhonesController extends Controller
 {
     public function index(){
         return new PhonesResource(phones::all());
+
     }
 }
