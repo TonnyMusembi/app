@@ -10,4 +10,9 @@ class TownsController extends Controller
     public function index(){
         return new TownsResource(towns::all());
     }
+
+    public function store (){
+        return'';
+    }
+
 }
