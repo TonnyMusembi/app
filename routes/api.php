@@ -10,6 +10,7 @@ use App\Http\Controllers\NewsController;
 use App\Http\Controllers\CountryController;
 use App\Http\Controllers\PhonesController;
 use App\Http\Controllers\CitiesController;
+use App\Models\cities;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,5 +42,4 @@ Route::apiResource('/country', CountryController::class );
 Route::apiResource('/phones', PhonesController::class );
 
 Route::apiResource('/cities', CitiesController::class );
-
 
