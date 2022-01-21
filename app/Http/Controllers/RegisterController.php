@@ -10,8 +10,6 @@ class RegisterController extends Controller
   public function index(){
         return new RegisterResource(register::all());
     }
-    public function register(){
-        return '';
-    }
-}
 
+
+}
