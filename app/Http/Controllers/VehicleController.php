@@ -10,4 +10,7 @@ class VehicleController extends Controller
     public function index(){
         return new VehicleResource(vehicle::all());
     }
+ public function add(){
+
+ }
 }
