@@ -14,7 +14,4 @@ class CitiesController extends Controller
     public function store (){
         return '';
     }
-    public function edit(){
-
-    }
 }

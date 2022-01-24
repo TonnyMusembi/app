@@ -44,4 +44,3 @@ Route::apiResource('/phones', PhonesController::class );
 
 Route::apiResource('/cities', CitiesController::class );
 Route::apiResource('/laptops', LaptopsController::class );
-
