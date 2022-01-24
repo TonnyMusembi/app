@@ -12,6 +12,6 @@ class CitiesController extends Controller
         return new CitiesResource(cities::all());
     }
     public function store (){
-        return '';
+        return'';
     }
 }
