@@ -12,4 +12,8 @@ class PhonesController extends Controller
         return new PhonesResource(phones::all());
 
     }
+
+    public function  login (){
+        return'';
+    }
 }
