@@ -13,13 +13,6 @@ class PhonesController extends Controller
 
     }
 
-    public function store(Request $request)
-{
-    $request->validate([
-        'phonetype' => 'required',
-        'country' => 'required',
-
-    ]);
-    return phones::create($request->all());
+    public function store(){
 }
 }
