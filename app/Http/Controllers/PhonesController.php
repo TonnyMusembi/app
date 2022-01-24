@@ -13,7 +13,7 @@ class PhonesController extends Controller
 
     }
 
-    public function  login (){
+    public function  store(){
         return'';
     }
 }
