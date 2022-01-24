@@ -5,12 +5,15 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CarController;
 use App\Http\Controllers\VehicleController;
 use App\Http\Controllers\TownsController;
-use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\CountryController;
 use App\Http\Controllers\PhonesController;
 use App\Http\Controllers\CitiesController;
 use App\Http\Controllers\LaptopsController;
+
+// use App\Http\Controllers\API\RegisterController;
+// use App\Http\Controllers\API\ProductController;
+
 use App\Models\cities;
 
 /*
@@ -44,3 +47,11 @@ Route::apiResource('/phones', PhonesController::class );
 
 Route::apiResource('/cities', CitiesController::class );
 Route::apiResource('/laptops', LaptopsController::class );
+
+
+// Route::post('register', [RegisterController::class, 'register']);
+// Route::post('login', [RegisterController::class, 'login']);
+
+// Route::middleware('auth:api')->group( function () {
+//     Route::resource('products', ProductController::class);
+// });
