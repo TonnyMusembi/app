@@ -14,5 +14,9 @@ class PhonesController extends Controller
     }
 
     public function store(){
+        response("", 200);
+}
+public function  select(){
+return '';
 }
 }
