@@ -15,4 +15,5 @@ class ArticlesTableSeeder extends Seeder
     {
         //
     }
+
 }
