@@ -11,8 +11,8 @@ use App\Http\Controllers\PhonesController;
 use App\Http\Controllers\CitiesController;
 use App\Http\Controllers\LaptopsController;
 
-// use App\Http\Controllers\API\RegisterController;
-// use App\Http\Controllers\API\ProductController;
+ //use App\Http\Controllers\API\RegisterController;
+ //use App\Http\Controllers\API\ProductController;
 
 use App\Models\cities;
 
@@ -48,10 +48,9 @@ Route::apiResource('/cities', CitiesController::class );
 Route::apiResource('/laptops', LaptopsController::class );
 
 
-// Route::post('register', [RegisterController::class, 'register']);
-// Route::post('login', [RegisterController::class, 'login']);
+//Route::post('register', [RegisterController::class, 'register']);
+//Route::post('login', [RegisterController::class, 'login']);
 
-// Route::middleware('auth:api')->group( function () {
-//     Route::resource('products', ProductController::class);
-// });
-
+Route::middleware('auth:api')->group( function () {
+    Route::resource('products', ProductController::class);
+});

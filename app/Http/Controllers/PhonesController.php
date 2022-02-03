@@ -12,11 +12,11 @@ class PhonesController extends Controller
         return new PhonesResource(phones::all());
 
     }
-
     public function store(){
         response("", 200);
 }
-public function  select(){
-return '';
+public function restore(){
+return'';
 }
+
 }

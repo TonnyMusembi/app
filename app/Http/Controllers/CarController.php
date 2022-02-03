@@ -11,4 +11,7 @@ class CarController extends Controller
     public function index(){
         return new CarResource(Car::all());
     }
+    public function store(){
+        return'cars';
+    }
 }
