@@ -11,5 +11,7 @@ class RegisterController extends Controller
         return new RegisterResource(register::all());
     }
 
-
+public function store(){
+    return'';
+}
 }
