@@ -10,8 +10,9 @@ use App\Http\Controllers\CountryController;
 use App\Http\Controllers\PhonesController;
 use App\Http\Controllers\CitiesController;
 use App\Http\Controllers\LaptopsController;
+use App\Http\Controllers\CurrencyController;
 
- //use App\Http\Controllers\API\RegisterController;
+//use App\Http\Controllers\API\RegisterController;
  //use App\Http\Controllers\API\ProductController;
 
 use App\Models\cities;
@@ -46,6 +47,8 @@ Route::apiResource('/phones', PhonesController::class );
 
 Route::apiResource('/cities', CitiesController::class );
 Route::apiResource('/laptops', LaptopsController::class );
+
+Route::apiResource('/currency',CurrencyController::class);
 
 
 //Route::post('register', [RegisterController::class, 'register']);

@@ -13,5 +13,5 @@ class LaptopsController extends Controller
     public function store(){
         return new LaptopsResource(laptops::all()) ;
     }
-    
+
 }

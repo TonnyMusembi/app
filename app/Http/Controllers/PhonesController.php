@@ -13,10 +13,8 @@ class PhonesController extends Controller
 
     }
     public function store(){
-        response("", 200);
-}
-public function restore(){
-return'';
-}
 
+return new PhonesResource(phones::all());
+
+}
 }
