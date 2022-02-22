@@ -14,5 +14,7 @@ class NewsController extends Controller
     public function store (){
         return new NewsResource(news::all());
     }
-    
+    public function create(){
+        return'  ';
+    }
 }

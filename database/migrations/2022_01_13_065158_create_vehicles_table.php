@@ -16,7 +16,7 @@ class CreateVehiclesTable extends Migration
         Schema::create('vehicles', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            
+
         });
     }
 
@@ -28,5 +28,8 @@ class CreateVehiclesTable extends Migration
     public function down()
     {
         Schema::dropIfExists('vehicles');
+    }
+    public function drop(){
+ Schema::dropIfExists();
     }
 }
