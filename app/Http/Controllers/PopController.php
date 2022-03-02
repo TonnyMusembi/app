@@ -13,7 +13,6 @@ class PopController extends Controller
      */
     public function index()
     {
-
  }
 
     /**
@@ -80,5 +79,8 @@ class PopController extends Controller
     public function destroy($id)
     {
         //
+    }
+    public function error(){
+        
     }
 }

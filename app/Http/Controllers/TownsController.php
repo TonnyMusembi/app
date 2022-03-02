@@ -14,6 +14,11 @@ class TownsController extends Controller
     public function store (){
         return'';
     }
-    
 
+ public function create (){
+     return '';
+ }
+ public function up(){
+     //
+ }
 }

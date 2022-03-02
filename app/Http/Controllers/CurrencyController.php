@@ -36,7 +36,7 @@ class CurrencyController extends Controller
      */
     public function store(Request $request)
     {
-        //
+     return new CurrencyController(currency::all());
     }
 
     /**
