@@ -53,6 +53,7 @@ Route::apiResource('/currency',CurrencyController::class);
 
 Route::apiResource('/pop',PopController::class);
 
+//Route::apiResource('/',);
 
 Route::post('register', [RegisterController::class, 'register']);
 Route::post('login', [RegisterController::class, 'login']);
