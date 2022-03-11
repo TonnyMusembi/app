@@ -13,7 +13,17 @@ class Towns extends Migration
      */
     public function up()
     {
-        //
+      Schema::create('towns', function (Blueprint $table) {
+          $table->bigIncrements('id');
+          $table->string('title');
+          $table->string('body');
+          $table->increments('schedule');
+
+
+
+          $table->timestamps();
+      });
+
     }
 
     /**
@@ -23,6 +33,10 @@ class Towns extends Migration
      */
     public function down()
     {
-        //
+        Schema::create('towns', function (Blueprint $table) {
+            $table->bigIncrements('id');
+
+            $table->timestamps();
+        });
     }
 }

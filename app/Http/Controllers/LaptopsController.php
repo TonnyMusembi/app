@@ -13,5 +13,13 @@ class LaptopsController extends Controller
     public function store(){
         return new LaptopsResource(laptops::all()) ;
     }
+public function create(){
+    $user =Laptops::where('id=');
+    //return 'Type:'.$laptop ->Type;
+    return response() ->json (['status'=>200,]);
 
+}
+public function restore(){
+    return'';
+}
 }

@@ -13,7 +13,14 @@ class Cars extends Migration
      */
     public function up()
     {
-        //
+
+        Schema::create('cars', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string ('title');
+            $table->string('body');
+            $table->timestamps();
+            $table->string('email');
+        });
     }
 
     /**
@@ -23,6 +30,12 @@ class Cars extends Migration
      */
     public function down()
     {
-        //
+   Schema::create('cars', function (Blueprint $table) {
+       $table->bigIncrements('id');
+       $table->string('title');
+       $table->string('body');
+       $table->string('email');
+       $table->timestamps();
+   });
     }
 }

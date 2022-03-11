@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 use App\Http\Resources\TownsResource;
 use App\Models\towns;
+use Illuminate\Database\Schema\SchemaState;
 use Illuminate\Http\Request;
+use Nette\Schema\Schema;
 
 class TownsController extends Controller
 {
@@ -12,7 +14,7 @@ class TownsController extends Controller
     }
 
     public function store (){
-        return'';
+
     }
 
  public function create (){
@@ -20,5 +22,6 @@ class TownsController extends Controller
  }
  public function up(){
      //
+   
  }
 }

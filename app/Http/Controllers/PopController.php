@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Schema;
 
 class PopController extends Controller
 {
@@ -81,6 +82,9 @@ class PopController extends Controller
         //
     }
     public function error(){
-        
+
+    }
+    public function up(){
+       
     }
 }
