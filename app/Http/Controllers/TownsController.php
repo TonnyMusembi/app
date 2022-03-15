@@ -18,10 +18,10 @@ class TownsController extends Controller
     }
 
  public function create (){
-     return '';
+   
  }
  public function up(){
      //
-   
+
  }
 }

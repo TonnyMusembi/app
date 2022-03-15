@@ -30,12 +30,6 @@ class Cars extends Migration
      */
     public function down()
     {
-   Schema::create('cars', function (Blueprint $table) {
-       $table->bigIncrements('id');
-       $table->string('title');
-       $table->string('body');
-       $table->string('email');
-       $table->timestamps();
-   });
+   Schema::dropDatabaseIfExists();
     }
 }
