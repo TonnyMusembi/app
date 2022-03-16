@@ -60,7 +60,7 @@ Route::group(['middleware' => ['cors', 'json.response']], function () {
     // ...
     // public routes
     //Route::post('/login', 'Auth\ApiAuthController@login')->name('login.api');
-    // Route::post('/register','Auth\ApiAuthController@register')->name('register.api');
+    Route::post('/register','Auth\ApiAuthController@register')->name('register.api');
     Route::post('/logout', 'Auth\ApiAuthController@logout')->name('logout.api');
 
     // ..
